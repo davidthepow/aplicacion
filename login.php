@@ -7,7 +7,7 @@ session_start();
     die('No se puedeconectar'. mysql_error());
     }
 
-    $db_selected = mysql_select_db('Login', $conn);
+    $db_selected = mysql_select_db('USUARIOS', $conn);
     if(!$db_selected){
     die('Error al seleccionar la BD'. mysql_error());
     }
