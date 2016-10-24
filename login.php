@@ -20,6 +20,8 @@ session_start();
     if($dato["password"] == SHA1("$pass")){
     $_SESSION["usuario"] = $dato['usuario'];
     $_SESSION["nombre"] = $dato['nombre'];
+	 $_SESSION["correo"] = $dato['correo'];
+   
    
         header('Location: usuario.php');
     }else{
